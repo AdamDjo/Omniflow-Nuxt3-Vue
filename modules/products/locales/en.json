@@ -1,0 +1,14 @@
+{
+  "TITLE": "PRODUCTS",
+  "ID": "Id",
+  "BODY": "Description",
+  "USERID": "User Id",
+  "DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec",
+  "FILTER": {
+    "ALL": "All",
+    "NEWS": "News",
+    "TECH": "HighTech"
+  },
+  "SEARCHPRODUCTS": "Search in products",
+  "ADDPRODUCTS": "Add a post"
+}

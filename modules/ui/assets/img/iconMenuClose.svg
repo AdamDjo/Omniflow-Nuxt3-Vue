@@ -1,0 +1,9 @@
+<svg id="Menu_ico" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Close_ico">
+    <rect id="Rectangle_2159" data-name="Rectangle 2159" width="40" height="40" rx="4" fill="#b8a7a7" opacity="0"/>
+    <g id="Groupe_2899" data-name="Groupe 2899" transform="translate(15.304 25.203) rotate(-135)">
+      <line id="Ligne_236" data-name="Ligne 236" x1="14" transform="translate(-6.5 7)" fill="none" stroke="#383333" stroke-linecap="round" stroke-width="2.5"/>
+      <line id="Ligne_237" data-name="Ligne 237" y2="14" transform="translate(1 0)" fill="none" stroke="#383333" stroke-linecap="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

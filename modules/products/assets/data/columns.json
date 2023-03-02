@@ -1,0 +1,20 @@
+[
+  {
+    "title": "$i18n.PRODUCTS.ID",
+    "dataIndex": "id",
+    "key": "id",
+    "sorter": true
+  },
+  {
+    "title": "$i18n.PRODUCTS.USERID",
+    "dataIndex": "userId",
+    "sorter": true,
+    "key": "userId"
+  },
+  {
+    "title": "$i18n.PRODUCTS.TITLE",
+    "dataIndex": "title",
+    "sorter": true,
+    "key": "title"
+  }
+]

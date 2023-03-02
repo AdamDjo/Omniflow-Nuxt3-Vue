@@ -1,0 +1,486 @@
+[
+  {
+    "origin": "https://jsonplaceholder.typicode.com",
+    "extraField": [
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Parametre technique pour integration d'options d'achat"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "technical param for integration buy options"
+          }
+        ],
+        "fieldName": "buyOptionWS",
+        "fieldType": "TEXT",
+        "group": "group1",
+        "id": "extrafield_tech01",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Options d'achat"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Buy options"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur des options d'achat"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the by options value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": ""
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "parametre technique pour integration volume de convertion"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "technical param for integration convertion volume"
+          }
+        ],
+        "fieldName": "convertionVolume",
+        "fieldType": "RADIO",
+        "group": "group1",
+        "id": "extrafield_tech02",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": false,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Volume de convertion"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Convertion volume"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur du volume de convertion"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the convertion volume value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": "",
+        "selectOptions": [
+          {
+            "value": "MO",
+            "key": "MO"
+          },
+          {
+            "value": "GO",
+            "key": "GO"
+          }
+        ]
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Parametre technique pour integration du type de crédit"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Technical param for integration credit type"
+          }
+        ],
+        "fieldName": "creditType",
+        "fieldType": "TEXTAREA",
+        "group": "group1",
+        "id": "extrafield_tech03",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Type de crédit"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Credit type"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur du type de crédit"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the credit type value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": ""
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "parametre technique pour integration des options récurrentes"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "technical param for integration recurrent options"
+          }
+        ],
+        "fieldName": "recurrentOptionID",
+        "fieldType": "CHECKBOX",
+        "group": "group1",
+        "id": "extrafield_tech04",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Option récurrentes"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Recurrent option"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur des options récurrentes"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the recurrent options value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": ""
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Parametre technique de l'unit"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "technical param of unit"
+          }
+        ],
+        "fieldName": "unit",
+        "fieldType": "TEXT",
+        "group": "group1",
+        "id": "extrafield_tech05",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": true,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "unit"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "unit"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur de l'unité"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the unit value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": ""
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Parametre technique de la validity"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Technical param of validity"
+          }
+        ],
+        "fieldName": "validity",
+        "fieldType": "NUMBER",
+        "group": "group1",
+        "id": "extrafield_tech06",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Validité"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Validity"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur de la validité"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the validity value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": ""
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "parametre technique des multiples"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "technical param of multiples"
+          }
+        ],
+        "fieldName": "mymultiple",
+        "fieldType": "MULTIPLESELECT",
+        "group": "group1",
+        "id": "extrafield_tech07",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Multiple"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Multiple"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur de multiple"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the multiple value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": "",
+        "selectOptions": [
+          {
+            "value": "val1",
+            "key": "val1"
+          },
+          {
+            "value": "val2",
+            "key": "val2"
+          },
+          {
+            "value": "val3",
+            "key": "val3"
+          }
+        ]
+      },
+      {
+        "description": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Parametre technique du select"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Technical param of select"
+          }
+        ],
+        "fieldName": "myselect",
+        "fieldType": "SELECT",
+        "group": "group1",
+        "id": "extrafield_tech08",
+        "isFrontMob": false,
+        "isHidden": false,
+        "isLocalized": false,
+        "isRequired": true,
+        "isSearchable": true,
+        "isDisplayedInList": true,
+        "label": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Select"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Select"
+          }
+        ],
+        "maximum": 1,
+        "minimum": 1,
+        "pattern": "",
+        "placeholder": [
+          {
+            "isoCode": "fr",
+            "type": "text",
+            "value": "Merci renseigner la valeur du select"
+          },
+          {
+            "isoCode": "en",
+            "type": "text",
+            "value": "Please fill the select value"
+          }
+        ],
+        "position": 1,
+        "status": "ACTIVATED",
+        "validationMessage": "",
+        "value": "",
+        "selectOptions": [
+          {
+            "value": "opt1",
+            "key": "opt1"
+          },
+          {
+            "value": "opt2",
+            "key": "opt2"
+          },
+          {
+            "value": "opt3",
+            "key": "opt3"
+          }
+        ]
+      }
+    ],
+    "revision": 1
+  }
+]

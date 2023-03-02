@@ -1,0 +1,30 @@
+{
+  "MENU": {
+    "HOME": "Home",
+    "CLIENTS": "Cliens",
+    "PRODUCTS": "Products",
+    "SERVICES": "Services",
+    "OPTIONS": "Options",
+    "CONFIGURATION": "Configuration"
+  },
+  "PAGER": {
+    "PAGE": "Pages",
+    "RANGE": "Line per page"
+  },
+  "EDIT": "Modify",
+  "ADD": "Add",
+  "DELETE": "Delete",
+  "CANCEL": "Cancel",
+  "SUREDELETE": "Are you sure  you want to delete?",
+  "SUREPUBLISH": "Are you sure  you want to publish?",
+  "OK": "Ok",
+  "NODATA": "No data found",
+  "BACK": "Back",
+  "REQUIRED": "This field is required",
+  "EXTRAFIELDS": "Extra fields ",
+  "CLOSE": "Close",
+  "SUCCESS": "Successfull operation",
+  "LANGUAGESELECT": "Select a Language",
+  "ERROR_OCCURED": "Error occured",
+  "ERROR_404": "Page not found"
+}

@@ -1,0 +1,20 @@
+{
+  "env": {
+    "WS_PRODUCTS_ADD": "/products/add",
+    "WS_PRODUCTS_UPDATE": "/products",
+    "WS_PRODUCTS_GET": "/products",
+    "WS_PRODUCTS_LIST": "/products",
+    "WS_PRODUCTS_COUNT": "/products",
+    "WS_PRODUCTS_DELETE": "/products",
+    "WS_EXTRA_FIELDS_LIST": "http://localhost:3000/mock/extrafields.json"
+  },
+  "envDevs": {
+    "WS_PRODUCTS_ADD": "/products/add",
+    "WS_PRODUCTS_UPDATE": "/products",
+    "WS_PRODUCTS_GET": "/products",
+    "WS_PRODUCTS_LIST": "/products",
+    "WS_PRODUCTS_COUNT": "/products",
+    "WS_PRODUCTS_DELETE": "/products",
+    "WS_EXTRA_FIELDS_LIST": "http://localhost:3000/mock/extrafields.json"
+  }
+}

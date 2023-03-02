@@ -1,0 +1,30 @@
+{
+  "MENU": {
+    "HOME": "Accueil",
+    "CLIENTS": "Clients",
+    "PRODUCTS": "Products",
+    "SERVICES": "Services",
+    "OPTIONS": "Options",
+    "CONFIGURATION": "Configuration"
+  },
+  "PAGER": {
+    "PAGE": "Pages",
+    "RANGE": "Ligne par page"
+  },
+  "EDIT": "Modifier",
+  "ADD": "Ajouter",
+  "DELETE": "Supprimer",
+  "CANCEL": "Annuler",
+  "SUREDELETE": "Vous êtes sure?",
+  "SUREPUBLISH": "Vous confirmer la publication?",
+  "OK": "Oui",
+  "NODATA": "Aucune donnée trouvée",
+  "BACK": "Retour",
+  "REQUIRED": "Ce champs est obligatoire",
+  "EXTRAFIELDS": "Champs extra",
+  "CLOSE": "Fermer",
+  "SUCCESS": "Opération effectuée avec succés",
+  "LANGUAGESELECT": "Selectionez une langue",
+  "ERROR_OCCURED": "Une erreur est survenue",
+  "ERROR_404": "Page introuvable"
+}

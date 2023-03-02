@@ -1,0 +1,55 @@
+$sfBold: 'SF-Bold', sans-serif;
+$sfSemiBold: 'SF-Semibold', sans-serif;
+$sfMedium: 'SF-Medium', sans-serif;
+$sfRegular: 'SF-Regular', sans-serif;
+$primaryColor: #1890ff;
+$errorColor: #2e76ee;
+$blackColor: #383333;
+$darkColor: #786d6d;
+$black: #000;
+$greyColor: #b8a7a7;
+$titleTable: #707070;
+$bgBodyColor: #f2f6f7;
+$bgWhite: #fff;
+$blueLight: #f7fafb;
+$bgNavItem: rgba($primaryColor, 0.05);
+$activeColor: rgba($primaryColor, 0.05);
+$borderRadius: 12px;
+$borderColor: #dfeaed;
+$greenColor: #18a189;
+$greenLight: #5bbe47;
+$greyText: #786d6d;
+$greytitle: #b8a7a7;
+$spacer: 16px !default;
+$lightGrey: #d9d9d9;
+$colorTitle: #2b2727;
+$borderBottromColor: #e8e8e8;
+$rateIconColor: #ffce00;
+$tableRedColor: #cd3c15;
+$TableGreenColor: #50be87;
+$notifYellow: #fdd600;
+$notifBlue1: #4169e1;
+$notifBlue2: #2e76ee;
+$notifGreen: #4fa43d;
+$hoverStatus: #ebe9e9;
+$hoverPrimary: #ff3733;
+$hoverCancel: #ffe7e8;
+$hoverActivate: #ebebeb;
+$purple: #916bbf;
+$blueColor: #7868e6;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;

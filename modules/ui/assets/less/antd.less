@@ -1,0 +1,28 @@
+// @import "ant-design-vue/lib/style/default.less";
+// // @import "ant-design-vue/lib/style/components.less";
+
+
+//this class must be passed as a wrapperClass attribute in the form.json when using a radio.
+.custom-radio {
+  .ant-radio-wrapper {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    padding-left: 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: #f2f6f7;
+
+    &.ant-radio-wrapper-checked {
+      border: solid 1px rgba(#ed0c14, 0.05);
+      background-color: rgba(#ed0c14, 0.05);
+    }
+  }
+
+  .ant-radio-group {
+    display: flex;
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+}

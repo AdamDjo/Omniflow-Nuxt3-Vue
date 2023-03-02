@@ -1,0 +1,35 @@
+[
+  {
+    "name": "MENU.HOME",
+    "path": "/",
+    "icon": {
+      "default": "/img/home.svg",
+      "active": "/img/home-on.svg"
+    }
+  },
+  {
+    "name": "MENU.CONFIGURATION",
+    "path": {
+      "name": "config"
+    },
+    "icon": {
+      "default": "icoConfig",
+      "active": "icoConfigOn"
+    },
+    "child": [
+      {
+        "name": "config-users"
+      }
+    ]
+  },
+  {
+    "name": "MENU.PRODUCTS",
+    "path": {
+      "name": "products"
+    },
+    "icon": {
+      "default": "icoProducts",
+      "active": "icoProductsOn"
+    }
+  }
+]

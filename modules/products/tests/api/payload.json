@@ -1,0 +1,8 @@
+{
+  "id": 123,
+  "title": "string",
+  "body": "string",
+  "userId": 123,
+  "tags": ["string", "string", "string"],
+  "reactions": 123
+}

@@ -1,0 +1,11 @@
+{
+  "title": "iPhone 9",
+  "price": 123,
+  "stock": 123,
+  "rating": 123,
+  "images": ["string", "string"],
+  "thumbnail": "string",
+  "description": "string",
+  "brand": "string",
+  "category": "string"
+}

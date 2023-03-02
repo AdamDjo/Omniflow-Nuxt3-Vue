@@ -1,0 +1,16 @@
+*.save
+cypress/fixtures/example.json
+cypress/plugins/index.js
+
+base
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+dist
+yarn.lock
+*.lock
+package-lock.json
+yarn.lock

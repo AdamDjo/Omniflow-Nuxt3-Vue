@@ -1,0 +1,140 @@
+@import './variable';
+
+.ant-table-tbody > tr > td .ant-table-thead > tr > th {
+  line-height: normal;
+}
+
+.icon-size {
+  height: 35px;
+  padding: 4px;
+}
+
+td.action {
+  text-align: right;
+  white-space: nowrap;
+}
+
+th.action {
+  font-family: $sfMedium;
+}
+
+th.title-column {
+  font-family: $sfMedium;
+}
+
+tr th {
+  font-family: $sfMedium;
+  white-space: nowrap;
+}
+
+tr td {
+  color: $blackColor;
+  font-family: $sfBold;
+}
+
+td.title-column {
+  font-family: $sfBold;
+}
+
+.ant-checkbox-inner {
+  position: relative;
+  z-index: 3;
+}
+
+.ant-table-thead > tr:first-child > th:first-child {
+  border-top-left-radius: 0;
+}
+
+.language-table {
+  .ant-pagination {
+    display: none;
+  }
+}
+
+.table-pagination-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ant-table-tbody > tr.ant-table-row-selected td {
+  background-color: $bgBodyColor;
+}
+
+.color-primary {
+  color: $primaryColor;
+}
+
+.ant-table-title {
+  position: relative;
+  top: 1px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.green-circle,
+.red-circle {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.red-circle {
+  background-color: $tableRedColor;
+}
+
+.green-circle {
+  background-color: $TableGreenColor;
+}
+
+.display-tags {
+  min-width: 140px;
+}
+
+.icon-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-dot {
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.bg-unpublish {
+  background-color: $primaryColor;
+}
+
+.bg-publish {
+  background-color: $greenLight;
+}
+
+.bg-draft {
+  background-color: $rateIconColor;
+}
+
+.categoryTable .ant-table-layout-fixed table {
+  table-layout: auto;
+}
+
+.categoryTable .Nowrap {
+  padding-right: 2rem;
+  white-space: nowrap;
+}
+
+.divider {
+  width: 1px;
+  padding-right: 1px;
+  margin: 0 5px;
+  background-color: $borderColor;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Ico_edit" transform="translate(-1725 -20)">
+    <rect id="Rectangle_2161" data-name="Rectangle 2161" width="40" height="40" rx="4" transform="translate(1725 20)" fill="#b8a7a7" opacity="0.002"/>
+    <g id="bxs-edit" transform="translate(1730.5 26.982)">
+      <path id="Tracé_11747" data-name="Tracé 11747" d="M27.461,3.018l3.16,3.16-2.409,2.41-3.16-3.16Z" transform="translate(-6.12 0)" fill="#786d6d"/>
+      <path id="Tracé_11748" data-name="Tracé 11748" d="M12,19.4h3.16l7.676-7.676-3.16-3.16L12,16.245Z" transform="translate(-2.234 -1.653)" fill="#786d6d"/>
+      <path id="Tracé_11749" data-name="Tracé 11749" d="M21.353,21.353H9.933c-.027,0-.056.011-.083.011s-.07-.009-.105-.011H6.607V6.607h7.212L15.925,4.5H6.607A2.108,2.108,0,0,0,4.5,6.607V21.353a2.108,2.108,0,0,0,2.107,2.107H21.353a2.107,2.107,0,0,0,2.107-2.107v-9.13l-2.107,2.107Z" transform="translate(0 -0.441)" fill="#786d6d"/>
+    </g>
+  </g>
+</svg>

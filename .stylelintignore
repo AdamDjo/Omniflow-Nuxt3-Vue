@@ -1,0 +1,13 @@
+# .stylelintignore
+*.min.css
+
+*.js
+*.jpg
+*.woff
+
+
+/test/
+/dist/
+
+/node_modules/
+/base/

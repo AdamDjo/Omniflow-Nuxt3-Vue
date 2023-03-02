@@ -1,0 +1,122 @@
+@import './variable';
+
+.btn-alignment {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.save-btn {
+  margin-left: 10px;
+}
+
+.btn-all {
+  display: flex;
+  width: 100%;
+}
+
+.btn-save-cancel {
+  margin-top: -4px;
+  margin-left: auto;
+}
+
+.btn-save-edit {
+  margin-left: 4px;
+}
+
+.radio-group {
+  width: 100%;
+}
+
+.secondary-btn-color {
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.radio {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  padding-left: 8px;
+  border-radius: 4px;
+  background-color: $bgBodyColor;
+}
+
+.radio-selected {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  padding-left: 8px;
+  border: solid 1px $activeColor;
+  border-radius: 4px;
+  background-color: $bgNavItem;
+}
+
+.custom-radio {
+  .ant-radio-wrapper {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    padding-left: 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: $bgBodyColor;
+
+    &.ant-radio-wrapper-checked {
+      border: solid 1px $activeColor;
+      background-color: $bgNavItem;
+    }
+  }
+
+  .ant-radio-group {
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.header-form-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  :deep(.btn-wrapper) {
+    display: flex;
+    flex: 1 1 auto;
+    align-self: auto;
+    justify-content: flex-end;
+    text-align: center;
+
+    .btn-content {
+      margin: 0 5px;
+    }
+
+    .ant-btn {
+      min-width: 150px;
+    }
+  }
+
+  .title-postion {
+    flex: 2 1 auto;
+    align-self: auto;
+    order: 0;
+  }
+}
+
+.grouped-text-inputs {
+  padding: 4px 8px;
+}
+
+.ant-form-item-children {
+  .ant-switch-checked {
+    background-color: $greenLight;
+  }
+}
