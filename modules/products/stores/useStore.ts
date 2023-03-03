@@ -68,9 +68,10 @@ export const useProductsStore = defineStore('useProductsStore', {
           headers: getHeaders(),
         });
         const res = await response.json();
+
         this.loading = false;
         if (response.status == 200) {
-          this.products = res.products.slice(0, 10);
+          this.products = res.statusMessage.slice(0, 10);
           return onSuccess(res);
         } else {
           return onError(errorServer);
@@ -127,9 +128,10 @@ export const useProductsStore = defineStore('useProductsStore', {
     },
     async useDeleteProducts({ $id, onError, onSuccess }: any) {
       this.loading = true;
+   
       try {
         const response: any = await fetch(
-          useNuxtApp().$config.API + useNuxtApp().$config.WS_PRODUCTS_DELETE + '/' + $id,
+          useNuxtApp().$config.API + useNuxtApp().$config.WS_PRODUCTS_DELETE + '/' + $id ,
           {
             method: 'DELETE',
             headers: getHeaders(),

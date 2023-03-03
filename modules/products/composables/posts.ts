@@ -24,8 +24,10 @@ export const useProducts = () => {
 
   /** delete translation item */
   const useRemoveProducts = (record: any) => {
+    
     store.useDeleteProducts({
-      $id: record.id,
+  
+      $id: record._id.toString(),
       onError: useOnError,
       onSuccess: () => {
         useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'));
@@ -91,10 +93,12 @@ export const useProducts = () => {
   };
 
   const useUpdateProducts = () => {
-    console.log('update');
+    
     productsForm.value.validate().then((valid: boolean) => {
       if (valid) {
+        console.log(productsPlayload.value)
         store.useUpdateProducts({
+        
           $data: productsPlayload.value,
           onError: (e: any) => useOnError(e.code == '5003' ? useNuxtApp().$i18n.t('PRODUCTS.EXIST') : ''),
           onSuccess: () => useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'), { path: '/' + locale + '/' + 'products' }),

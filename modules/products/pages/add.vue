@@ -46,6 +46,7 @@
           @clearValidate="useClearValidate"
         />
       </template>
+      <!--
       <template #footerCollapsable>
         <lazy-ui-forms-extrafields
           v-if="extraFields.length"
@@ -55,7 +56,7 @@
           @updateData="useFormDataChange"
           @clearValidate="useClearValidate"
         />
-      </template>
+      </template>-->
     </ui-templates-form>
   </a-form>
 </template>

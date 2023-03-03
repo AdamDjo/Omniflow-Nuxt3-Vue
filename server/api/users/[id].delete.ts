@@ -1,4 +1,4 @@
-import ProductModel from "~~/server/models/Product.model"
+import UserModel from "~~/server/models/User.model"
 
 export default defineEventHandler(async(e)=>{
 
@@ -7,10 +7,10 @@ export default defineEventHandler(async(e)=>{
  const id = e.context.params.id;
 // update book
 try{
-    await ProductModel.findByIdAndDelete(id)
+    await UserModel.findByIdAndDelete(id)
     return {
         status:200,
-        products:'product deleted successfully'
+        statusMessage:'product deleted successfully'
        }
 } catch (error) {
     console.log(error);

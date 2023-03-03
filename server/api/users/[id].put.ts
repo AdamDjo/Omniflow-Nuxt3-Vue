@@ -1,16 +1,17 @@
-import ProductModel from "~~/server/models/Product.model"
+import UserModel from "~~/server/models/User.model"
 
 export default defineEventHandler(async(e)=>{
-
+// get data from body
+ const body = await readBody(e)
 
  // get id from params
  const id = e.context.params.id;
 // update book
 try{
-    await ProductModel.findByIdAndDelete(id)
+    await UserModel.findByIdAndUpdate(id,body)
     return {
         status:200,
-        products:'product deleted successfully'
+        statusMessage:'product updated successfully'
        }
 } catch (error) {
     console.log(error);

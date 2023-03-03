@@ -5,16 +5,25 @@
     "key": "id",
     "sorter": true
   },
-  {
-    "title": "$i18n.PRODUCTS.USERID",
-    "dataIndex": "userId",
-    "sorter": true,
-    "key": "userId"
-  },
+ 
   {
     "title": "$i18n.PRODUCTS.TITLE",
     "dataIndex": "title",
     "sorter": true,
     "key": "title"
+  },
+  {
+    "title": "$i18n.PRODUCTS.BODY",
+    "dataIndex": "description",
+    "sorter": true,
+    "key": "description"
+
+  },
+  {
+    "title": "$i18n.PRODUCTS.THUMBNAIL",
+    "dataIndex": "THUMBNAIL",
+    "sorter": true,
+    "key": "THUMBNAIL"
   }
+
 ]
