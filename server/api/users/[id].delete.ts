@@ -10,7 +10,7 @@ try{
     await UserModel.findByIdAndDelete(id)
     return {
         status:200,
-        statusMessage:'product deleted successfully'
+        statusMessage:'user deleted successfully'
        }
 } catch (error) {
     console.log(error);

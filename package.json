@@ -35,10 +35,13 @@
   },
   "dependencies": {
     "@luigi-project/client": "^1.20.1",
+    "@types/uuid": "^9.0.1",
     "@vueup/vue-quill": "^1.0.1",
     "file-saver": "^2.0.5",
     "mongoose": "^7.0.0",
+    "mongoose-bcrypt": "^1.10.1",
     "quill-image-uploader": "^1.2.2",
+    "uuid": "^9.0.0",
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {

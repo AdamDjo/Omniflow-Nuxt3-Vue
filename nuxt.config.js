@@ -77,17 +77,21 @@ export default defineNuxtConfig({
   },
   modules: [
     // app modules
+    `../${baseFolder}/modules/login`,
     `../${baseFolder}/modules/home`,
     `../${baseFolder}/modules/ui`,
     `../${baseFolder}/modules/config`,
     `../${baseFolder}/modules/language`,
     `../${baseFolder}/modules/products`,
+    
     // npm module
     '@pinia/nuxt',
+    
     '@nuxtjs/i18n', // keep last
+   
     // server side
   
-    
+   
   ],
   i18n: {
     locales: ['en', 'fr'],

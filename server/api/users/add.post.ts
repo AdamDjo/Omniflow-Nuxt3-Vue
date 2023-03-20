@@ -9,7 +9,7 @@ export default defineEventHandler(async(e)=>{
    await UserModel.create(body);
    return {
     status:200,
-    statusMessage:'product Added'
+    statusMessage:'user Added'
    }
 
     } catch (error) {
@@ -17,7 +17,7 @@ export default defineEventHandler(async(e)=>{
         return {
             error,
             status:500,
-            statusMessage:'Error on adding product'
+            statusMessage:'Error on adding user'
             
         }
     }

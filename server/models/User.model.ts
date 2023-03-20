@@ -1,19 +1,22 @@
 import mongoose from 'mongoose';
+import bcrypt from "mongoose-bcrypt";
 // User schema
 const schema: mongoose.Schema = new mongoose.Schema(
   {
-    Nom: {
+    name: {
       type: String,
-      required: true,
     },
     email: {
         type: String,
         required: true,
     },
-    Role:{
+    password:{
         type: String,
         required: true,
+        bcrypt:true
     },
-}
+},
+{ timestamps: true, strict: true, strictQuery: true }
 );
+schema.plugin(bcrypt)
 export default mongoose.model('User', schema);

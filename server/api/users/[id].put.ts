@@ -11,7 +11,7 @@ try{
     await UserModel.findByIdAndUpdate(id,body)
     return {
         status:200,
-        statusMessage:'product updated successfully'
+        statusMessage:'user updated successfully'
        }
 } catch (error) {
     console.log(error);
