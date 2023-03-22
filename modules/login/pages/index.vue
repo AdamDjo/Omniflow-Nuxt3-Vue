@@ -8,6 +8,7 @@
     autocomplete="off"
     @finish="onFinish"
     @finishFailed="onFinishFailed"
+    @submit="userLogin"
   >
     <a-form-item
       label="Username"
@@ -38,7 +39,10 @@
 <script lang="ts">
 
 import { defineComponent, reactive } from 'vue';
+import { useAuthStore } from '../stores/useAuthStore';
 
+
+const authStore = useAuthStore();
 interface FormState {
   username: string;
   password: string;
@@ -54,6 +58,7 @@ export default defineComponent({
       password: '',
       remember: true,
     });
+  
     const onFinish = (values: any) => {
       console.log('Success:', values);
     };
@@ -61,10 +66,14 @@ export default defineComponent({
     const onFinishFailed = (errorInfo: any) => {
       console.log('Failed:', errorInfo);
     };
+     const userLogin =async ()=> {
+      authStore.login(formState)
+    } 
     return {
       formState,
       onFinish,
       onFinishFailed,
+      userLogin
     };
   },
 });

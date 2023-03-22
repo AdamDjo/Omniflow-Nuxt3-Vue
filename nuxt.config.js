@@ -5,7 +5,7 @@ import localeEN from './locales/en.json';
 import localeFR from './locales/fr.json';
 const baseFolder = basename(resolve(__dirname));
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   app: {
     rootId: '__app',
     buildAssetsDir: '/src/',
@@ -38,6 +38,15 @@ export default defineNuxtConfig({
   devtools: true,
   vite: {
     server: {
+      /*host: "localhost",
+      port: 3000,
+     // credentials:true,
+      proxy: {
+        "/": {
+          target: "http://localhost:3000/api",
+          changeOrigin: true,
+        },
+      },*/
       fs: {
         allow: ['C:'],
       },
@@ -86,13 +95,32 @@ export default defineNuxtConfig({
     
     // npm module
     '@pinia/nuxt',
-    
+   // '@sidebase/nuxt-auth',
+   //'@nuxtjs/axios',
+  // '@nuxtjs/auth-next',
     '@nuxtjs/i18n', // keep last
    
     // server side
   
    
   ],
+  auth: {
+    localStorage: false,
+    cookie: {
+      options: {
+        expires: 7
+      }
+    },
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/api/users/add', method: 'post', propertyName: false },
+          logout: false,
+          user: { url: '/api/users', method: 'get', propertyName: false }
+        }
+      }
+    }
+    },
   i18n: {
     locales: ['en', 'fr'],
     dynamicRouteParams: true,
@@ -113,5 +141,6 @@ export default defineNuxtConfig({
   },
   nitro:{
     plugins:['~/server/db/index.ts'],
-  }
+  },
+  
 });

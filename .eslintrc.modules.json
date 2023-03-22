@@ -29,6 +29,7 @@
     "useCustomThumbnail": "readonly",
     "useCustomFilters": "readonly",
     "useTriggerTabError": "readonly",
-    "useGoToPrev": "readonly"
+    "useGoToPrev": "readonly",
+    "useAuthStore": "readonly"
   }
 }

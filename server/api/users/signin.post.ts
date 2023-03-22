@@ -1,4 +1,7 @@
 import UserModel from "~~/server/models/User.model"
+import jwt from 'jsonwebtoken';
+import { setCookie } from 'h3'
+
 export default defineEventHandler(async (e) => {
     console.log("POST /api/users/signin");
     const body = await readBody(e)
@@ -28,10 +31,16 @@ export default defineEventHandler(async (e) => {
         console.log("User found");
         const isPasswordValid = await userData.verifyPasswordSync(body.password);
         if (isPasswordValid) {
+          const token: string = await jwt.sign({ _id:userData._id }, 'mysecrettoken');
+          setCookie(e,'jwt',token,{
+            httpOnly: true,
+            maxAge:24*60*60*1000 //1day
+          }),
+          console.log(token)
           // Generate token or create session here
           return {
-            id: userData._id,
-            name: userData.name,
+           
+            message:'success'
           };
         } else {
           console.log("Password is not valid");
