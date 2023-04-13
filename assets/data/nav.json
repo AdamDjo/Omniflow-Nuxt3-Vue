@@ -31,5 +31,16 @@
       "default": "icoProducts",
       "active": "icoProductsOn"
     }
+  },
+  {
+    "name": "MENU.LOGOUT",
+    "path": {
+      "name": "logout"
+    },
+    "icon": {
+      "default": "icoConfig",
+      "active": "icoConfig"
+    }
   }
+
 ]

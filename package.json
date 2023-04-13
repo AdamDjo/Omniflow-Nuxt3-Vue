@@ -37,6 +37,7 @@
     "@luigi-project/client": "^1.20.1",
     "@types/uuid": "^9.0.1",
     "@vueup/vue-quill": "^1.0.1",
+    "cookie-universal-nuxt": "^2.2.2",
     "file-saver": "^2.0.5",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.0",

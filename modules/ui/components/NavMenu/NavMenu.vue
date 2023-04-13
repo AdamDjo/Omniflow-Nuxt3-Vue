@@ -11,7 +11,16 @@
       :class="{ 'ant-menu-item-selected-custom': useActiveMenu(nav) }"
       @click="
         () => {
+        
+          if(localePath(nav.path.name)!='logout'){
+         
+          
           navigateTo(localePath(nav.path));
+        }
+        else{
+       
+          navigateTo('/login')
+        }
         }
       "
     >

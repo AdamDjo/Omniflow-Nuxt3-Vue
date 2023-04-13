@@ -6,16 +6,16 @@
     :label-col="{ span: 4 }"
     :wrapper-col="{ span: 16 }"
     autocomplete="off"
-    @finish="onFinish"
+    
     @finishFailed="onFinishFailed"
     @submit="userLogin"
   >
     <a-form-item
-      label="Username"
-      name="username"
-      :rules="[{ required: true, message: 'Please input your username!' }]"
+      label="Email"
+      name="Email"
+      :rules="[{ required: true, message: 'Please input your Email!' }]"
     >
-      <a-input v-model:value="formState.username" />
+      <a-input v-model:value="formState.Email" />
     </a-form-item>
 
     <a-form-item
@@ -44,22 +44,24 @@ import { useAuthStore } from '../stores/useAuthStore';
 
 const authStore = useAuthStore();
 interface FormState {
-  username: string;
+  Email: string;
   password: string;
   remember: boolean;
 }
 definePageMeta({
   layout: "custom",
+   
 });
 export default defineComponent({
   setup() {
     const formState = reactive<FormState>({
-      username: '',
+      Email: '',
       password: '',
       remember: true,
     });
   
     const onFinish = (values: any) => {
+      authStore.auth()
       console.log('Success:', values);
     };
 
@@ -67,7 +69,9 @@ export default defineComponent({
       console.log('Failed:', errorInfo);
     };
      const userLogin =async ()=> {
-      authStore.login(formState)
+      authStore.login(formState).then(()=>{
+        authStore.auth()
+      })
     } 
     return {
       formState,

@@ -5,7 +5,9 @@
     "PRODUCTS": "Products",
     "SERVICES": "Services",
     "OPTIONS": "Options",
-    "CONFIGURATION": "Configuration"
+    "CONFIGURATION": "Configuration",
+    "LOGOUT":"Disconnect"
+
   },
   "PAGER": {
     "PAGE": "Pages",
