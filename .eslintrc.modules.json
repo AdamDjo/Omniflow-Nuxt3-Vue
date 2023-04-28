@@ -1,5 +1,7 @@
 {
   "globals": {
+    "useUsersStore": "readonly",
+    "useUsers": "readonly",
     "useProductsStore": "readonly",
     "useProducts": "readonly",
     "useLanguageStore": "readonly",

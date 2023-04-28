@@ -1,0 +1,24 @@
+[
+  {
+    "title": "$i18n.USERS.ID",
+    "dataIndex": "id",
+    "key": "id",
+    "sorter": true
+  },
+ 
+  {
+    "title": "$i18n.USERS.EMAIL",
+    "dataIndex": "email",
+    "sorter": true,
+    "key": "email"
+  },
+  {
+    "title": "$i18n.USERS.PASSWORD",
+    "dataIndex": "password",
+    "sorter": true,
+    "key": "password"
+
+  }
+
+
+]

@@ -1,0 +1,20 @@
+{
+  "env": {
+    "WS_USERS_ADD": "/users/add",
+    "WS_USERS_UPDATE": "/users",
+    "WS_USERS_GET": "/users",
+    "WS_USERS_LIST": "/users",
+    "WS_USERS_COUNT": "/users",
+    "WS_USERS_DELETE": "/users",
+    "WS_EXTRA_FIELDS_LIST": "http://localhost:3000/mock/extrafields.json"
+  },
+  "envDevs": {
+    "WS_USERS_ADD": "/users/add",
+    "WS_USERS_UPDATE": "/users",
+    "WS_USERS_GET": "/users",
+    "WS_USERS_LIST": "/users",
+    "WS_USERS_COUNT": "/users",
+    "WS_USERS_DELETE": "/users",
+    "WS_EXTRA_FIELDS_LIST": "http://localhost:3000/mock/extrafields.json"
+  }
+}

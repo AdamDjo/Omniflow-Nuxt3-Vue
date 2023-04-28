@@ -12,14 +12,14 @@
       @click="
         () => {
         
-          if(localePath(nav.path.name)!='logout'){
-         
+          if(localePath(nav.path.name)=='logout'){
+            navigateTo(localePath('/login'));
           
-          navigateTo(localePath(nav.path));
+     
         }
-        else{
+        else {
        
-          navigateTo('/login')
+          navigateTo(localePath(nav.path));
         }
         }
       "

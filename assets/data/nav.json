@@ -33,6 +33,16 @@
     }
   },
   {
+    "name": "MENU.USERS",
+    "path": {
+      "name": "users"
+    },
+    "icon": {
+      "default": "icoProducts",
+      "active": "icoProductsOn"
+    }
+  },
+  {
     "name": "MENU.LOGOUT",
     "path": {
       "name": "logout"

@@ -92,6 +92,7 @@ export default defineNuxtConfig({
     `../${baseFolder}/modules/config`,
     `../${baseFolder}/modules/language`,
     `../${baseFolder}/modules/products`,
+    `../${baseFolder}/modules/users`,
     
     // npm module
     '@pinia/nuxt',

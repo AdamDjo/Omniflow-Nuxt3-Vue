@@ -1,0 +1,58 @@
+[
+
+  {
+    "fieldName": "title",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.TITLE",
+    "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
+  },
+  {
+    "fieldName": "description",
+    "fieldType": "TEXTAREA",
+    "label": "$i18n.PRODUCTS.BODY",
+    "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
+  },
+  {
+    "fieldName": "price",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.PRICE"
+  },
+  {
+    "fieldName": "discountPercentage",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.DISCOUNT"
+  },
+  {
+    "fieldName": "rating",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.RATING"
+  },
+  {
+    "fieldName": "stock",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.STOCK"
+  },
+  {
+    "fieldName": "brand",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.BRAND"
+  },
+  {
+    "fieldName": "category",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.CATEGORY"
+  },
+  {
+    "fieldName": "thumbnail",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.THUMBNAIL"
+  },
+  {
+    "fieldName": "images",
+    "fieldType": "TEXT",
+    "label": "$i18n.PRODUCTS.IMAGES"
+  }
+  
+  
+
+]
