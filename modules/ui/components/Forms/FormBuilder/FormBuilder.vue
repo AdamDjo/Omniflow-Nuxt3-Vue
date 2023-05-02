@@ -259,7 +259,7 @@
                 :accept="fieldItem.accept"
                 list-type="picture"
                 :action="url + fieldItem.prefix"
-                :headers="headersUpload"
+                
                 :file-list="file[fieldItem.fieldName].fileList"
                 :before-upload="(e) => useBeforeUploadFile(e, fieldItem.accept, fieldItem.error)"
                 @change="useChangeFile($event, fieldItem.fieldName)"
@@ -444,9 +444,9 @@ const { useClearValidate, useFormDataChange, useTextEditorFileUpload }: any = fo
 let formReactiveKey: any = {};
 const url = useNuxtApp().$config.API + useNuxtApp().$config.WS_ADD_MEDIA + useNuxtApp().$i18n.locale.value;
 const file: any = ref({});
-const headersUpload = {
+/*const headersUpload = {
   authorization: decodeURIComponent(useNuxtApp().$auth.token),
-};
+};*/
 onMounted(() => {
   useInitForm();
 });

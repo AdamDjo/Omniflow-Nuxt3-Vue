@@ -1,18 +1,18 @@
 <template>
   <ui-templates-list :back-url="localePath('/')">
     <template #title>
-      {{ $t('PRODUCTS.TITLE') }}
+      {{ $t('USERS.TITLE') }}
     </template>
     <template #description>
-      {{ $t('PRODUCTS.DESCRIPTION') }}
+      {{ $t('USERS.DESCRIPTION') }}
     </template>
     <template #actions>
       <a-button
         class="btn-add"
         type="primary"
-        @click="$router.push(localePath('products-add'))"
+        @click="$router.push(localePath('users-add'))"
       >
-        {{ $t('PRODUCTS.ADDPRODUCTS') }}
+        {{ $t('USERS.ADDUSERS') }}
       </a-button>
     </template>
     <template #filters>
@@ -35,17 +35,17 @@
     </template>
     <template #table>
       <lazy-ui-table-async-result-table
-        :res="products"
+        :res="users"
         :filters="bodyFilter"
         :nb-elements="nbElements"
         :cols="columns"
         :has-edit-prem="true"
         :has-delete-prem="true"
-        edit-path="products-id"
-        :loading="loadingProducts"
+        edit-path="user-id"
+        :loading="loadingUsers"
         :search-placeholder="$t('PRODUCTS.SEARCHPRODUCTS')"
         :msg-no-data="$t('NODATA')"
-        @removeItem="useRemoveProducts"
+        @removeItem="useRemoveUsers"
         @filterData="(data) => useFilterData(data)"
       />
     </template>
@@ -53,22 +53,22 @@
 </template>
 
 <script lang="ts" setup>
-import cols from '@PRODUCTS/assets/data/columns.json';
+import cols from '@USERS/assets/data/columns.json';
 
 const store = useUsersStore();
 const { useGetData } = useLanguagesList();
 const columns = useTranslate(cols);
-const { bodyFilter, loadingProducts, useRemoveProducts, useGetProductsList } = useUsers();
+const { bodyFilter, loadingUsers, useRemoveUsers, useGetUsersList } = useUsers();
 
 onMounted(() => {
   //get data of languages
   useGetData();
   //get data of tanslations
-  useGetProductsList();
+  useGetUsersList();
 });
 
 //computed products (props to the table)
-const products = computed(() => {
+const users = computed(() => {
   return store.users;
 });
 //get nb elments
@@ -78,6 +78,6 @@ const nbElements = computed(() => {
 
 const useFilterData = (data: any) => {
   bodyFilter.value = { ...bodyFilter.value, ...data };
-  useGetProductsList();
+  useGetUsersList();
 };
 </script>

@@ -1,58 +1,26 @@
 [
-
   {
-    "fieldName": "title",
+    "fieldName": "id",
     "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.TITLE",
+    "label": "$i18n.PASSWORD.id",
     "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
   },
   {
-    "fieldName": "description",
+    "fieldName": "email",
+    "fieldType": "TEXT",
+    "label": "$i18n.EMAIL.TITLE",
+    "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
+  },
+  {
+    "fieldName": "password",
     "fieldType": "TEXTAREA",
-    "label": "$i18n.PRODUCTS.BODY",
+    "label": "$i18n.PASSWORD.BODY",
     "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
-  },
-  {
-    "fieldName": "price",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.PRICE"
-  },
-  {
-    "fieldName": "discountPercentage",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.DISCOUNT"
-  },
-  {
-    "fieldName": "rating",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.RATING"
-  },
-  {
-    "fieldName": "stock",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.STOCK"
-  },
-  {
-    "fieldName": "brand",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.BRAND"
-  },
-  {
-    "fieldName": "category",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.CATEGORY"
-  },
-  {
-    "fieldName": "thumbnail",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.THUMBNAIL"
-  },
-  {
-    "fieldName": "images",
-    "fieldType": "TEXT",
-    "label": "$i18n.PRODUCTS.IMAGES"
   }
+
   
+
+
   
 
 ]

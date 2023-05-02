@@ -17,7 +17,7 @@ export const useUsersStore = defineStore('useUsersStore', {
     };
   },
   actions: {
-    async useAddProducts({ $data, onError, onSuccess }: any) {
+    async useAddUsers({ $data, onError, onSuccess }: any) {
       this.loading = true;
       try {
         const response: any = await fetch(useNuxtApp().$config.API + useNuxtApp().$config.WS_USERS_ADD, {
@@ -81,7 +81,7 @@ export const useUsersStore = defineStore('useUsersStore', {
         return onError(e);
       }
     },
-    async useProductsItemsNumber({ $filters, onError, onSuccess }: any) {
+    async useUsersItemsNumber({ $filters, onError, onSuccess }: any) {
       this.loading = true;
       try {
         useNuxtApp;
@@ -103,7 +103,7 @@ export const useUsersStore = defineStore('useUsersStore', {
       }
     },
 
-    async useUpdateProducts({ $data, onError, onSuccess }: any) {
+    async useUpdateUsers({ $data, onError, onSuccess }: any) {
       this.loading = true;
       try {
         const response: any = await fetch(
@@ -126,7 +126,7 @@ export const useUsersStore = defineStore('useUsersStore', {
         return onError(e);
       }
     },
-    async useDeleteProducts({ $id, onError, onSuccess }: any) {
+    async useDeleteUsers({ $id, onError, onSuccess }: any) {
       this.loading = true;
    
       try {
@@ -149,7 +149,7 @@ export const useUsersStore = defineStore('useUsersStore', {
       }
     },
 
-    async useGetExtraFieldsProducts() {
+    async useGetExtraFieldsUsers() {
       this.loading = true;
       const body = {};
       await useGetExtraFieldsList({

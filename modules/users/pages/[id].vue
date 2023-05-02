@@ -1,13 +1,13 @@
 <template>
   <a-form
-    ref="productsForm"
-    :model="productsPlayload"
+    ref="usersForm"
+    :model="usersPlayload"
     :rules="rules"
     layout="vertical"
-    @finish="useUpdateProducts()"
+    @finish="useUpdateUsers()"
   >
     <ui-templates-form
-      :back-url="localePath('products')"
+      :back-url="localePath('users')"
       :footer-collapsable-title="$t('EXTRAFIELDS')"
       :footer-collapsabled="false"
       :footer-visible="Boolean(extraFields.length)"
@@ -19,7 +19,7 @@
         <div class="btn-content">
           <a-button
             class="cancel-btn ant-btn"
-            @click="$router.push(localePath('products'))"
+            @click="$router.push(localePath('users'))"
           >
             {{ $t('CANCEL') }}
           </a-button>
@@ -39,11 +39,11 @@
       </template>
       <template #form>
         <lazy-ui-forms-form-builder
-          :key="productsDetail.id"
-          :data="productsDetail"
+          :key="usersDetail.id"
+          :data="usersDetail"
           :langs="langs"
           :rules="rules"
-          :form-model="formProducts"
+          :form-model="formUsers"
           @updateData="useFormDataChange"
           @clearValidate="useClearValidate"
         />
@@ -66,32 +66,32 @@
 import form from '@USERS/assets/data/form.json';
 
 const {
-  productsPlayload,
-  productsForm,
+  usersPlayload,
+  usersForm,
   rules,
-  useUpdateProducts,
+  useUpdateUsers,
   useFormDataChange,
   useClearValidate,
-  useGetProducts,
-  useGetExtraFieldsProducts,
-} = useProducts();
+  useGetUsers,
+  useGetExtraFieldsUsers,
+} = useUsers();
 const $route = useRoute();
-const formProducts = useTranslate(form);
+const formUsers = useTranslate(form);
 const { useGetData, langs } = useLanguagesList();
 
 /** Products one currency item */
 onMounted(() => {
   useGetData();
-  useGetProducts($route.params.id);
-  useGetExtraFieldsProducts();
+  useGetUsers($route.params.id);
+  useGetExtraFieldsUsers();
 });
 
-const productsDetail = computed(() => {
-  return useProductsStore().product;
+const usersDetail = computed(() => {
+  return useUsersStore().users;
 });
 
 const extraFields = computed(() => {
-  return useProductsStore().extraFields;
+  return useUsersStore().extraFields;
 });
 </script>
 <style lang="scss" scoped>

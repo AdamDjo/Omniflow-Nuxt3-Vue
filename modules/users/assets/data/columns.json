@@ -1,8 +1,8 @@
 [
   {
     "title": "$i18n.USERS.ID",
-    "dataIndex": "id",
-    "key": "id",
+    "dataIndex": "_id",
+    "key": "_id",
     "sorter": true
   },
  

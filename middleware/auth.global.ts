@@ -3,6 +3,7 @@ import useStatefulCookie from "~~/composable/useStatefulCookie";
 
 export default defineNuxtRouteMiddleware(() => {
     // to complete with your own authentification mecanism (oath2, jswt...)
+   /*
     if (process.client) {
      // to complete with your own authentification mecanism (oath2, jswt...)
 
@@ -10,10 +11,10 @@ export default defineNuxtRouteMiddleware(() => {
      //userInfo.value = userInfo.value || { token: "", userId: -1, mail: "", loggedIn: false }
    
      if (userInfo.value== undefined){
- 
-   
+        
+      
      }
      console.log("userinfo",userInfo)
-  }
+  }*/
   });
 

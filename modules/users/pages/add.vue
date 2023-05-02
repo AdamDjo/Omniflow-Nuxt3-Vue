@@ -1,13 +1,13 @@
 <template>
   <a-form
-    ref="productsForm"
-    :model="productsPlayload"
+    ref="usersForm"
+    :model="usersPlayload"
     :rules="rules"
     layout="vertical"
-    @finish="useAddProducts()"
+    @finish="useAddUsers()"
   >
     <ui-templates-form
-      :back-url="localePath('products')"
+      :back-url="localePath('users')"
       :footer-collapsable-title="$t('EXTRAFIELDS')"
       :footer-collapsabled="false"
       :footer-visible="Boolean(extraFields.length)"
@@ -19,7 +19,7 @@
         <div class="btn-content">
           <a-button
             class="cancel-btn ant-btn"
-            @click="$router.push(localePath('products'))"
+            @click="$router.push(localePath('users'))"
           >
             {{ $t('CANCEL') }}
           </a-button>
@@ -35,13 +35,13 @@
         </div>
       </template>
       <template #fieldsetTitle>
-        {{ $t('PRODUCTS.ADDPRODUCTS') }}
+        {{ $t('USERS.ADDUSERS') }}
       </template>
       <template #form>
         <lazy-ui-forms-form-builder
           :langs="langs"
           :rules="rules"
-          :form-model="formProducts"
+          :form-model="formUsers"
           @updateData="useFormDataChange"
           @clearValidate="useClearValidate"
         />
@@ -62,26 +62,26 @@
 </template>
 
 <script lang="ts" setup>
-import form from '@PRODUCTS/assets/data/form.json';
+import form from '@USERS/assets/data/form.json';
 const { useGetData, langs } = useLanguagesList();
 const {
-  productsPlayload,
+  usersPlayload,
   rules,
-  productsForm,
-  useGetExtraFieldsProducts,
-  useAddProducts,
+  usersForm,
+  useGetExtraFieldsUsers,
+  useAddUsers,
   useFormDataChange,
   useClearValidate,
-} = useProducts();
+} = useUsers();
 const extraFields = computed(() => {
-  return useProductsStore().extraFields;
+  return useUsersStore().extraFields;
 });
 
-const formProducts = useTranslate(form);
+const formUsers = useTranslate(form);
 /** Products one currency item */
 onMounted(() => {
   useGetData();
-  useGetExtraFieldsProducts();
+  useGetExtraFieldsUsers();
 });
 </script>
 

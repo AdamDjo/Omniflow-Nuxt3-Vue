@@ -1,48 +1,48 @@
 export const useUsers = () => {
   const store = useUsersStore();
-  const productsPlayload: any = ref({});
+  const usersPlayload: any = ref({});
   const locale: string = useNuxtApp().$i18n.locale.value;
 
   const { bodyFilter } = listFilters();
-  const productsForm: any = ref(null);
+  const usersForm: any = ref(null);
   const rules = reactive({});
 
   const useFormDataChange = (data: any, name: any) => {
     if (name) {
-      productsPlayload.value[name] = data;
+     usersPlayload.value[name] = data;
     } else {
-      productsPlayload.value = { ...productsPlayload.value, ...data };
+      usersPlayload.value = { ...usersPlayload.value, ...data };
     }
   };
-  const loadingProducts = computed(() => {
+  const loadingUsers = computed(() => {
     return store.loading;
   });
 
   const useClearValidate = (fieldProp: any) => {
-    productsForm.value.clearValidate(fieldProp);
+    usersForm.value.clearValidate(fieldProp);
   };
 
   /** delete translation item */
-  const useRemoveProducts = (record: any) => {
+  const useRemoveUsers = (record: any) => {
     
-    store.useDeleteProducts({
+    store.useDeleteUsers({
   
       $id: record._id.toString(),
       onError: useOnError,
       onSuccess: () => {
         useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'));
-        useGetProductsList();
+        useGetUsersList();
       },
     });
   };
 
-  const useGetProductsList = () => {
-    useGetProductsListItems();
-    useGetProductsTotalItems();
+  const useGetUsersList = () => {
+    useGetUsersListItems();
+    useGetUsersTotalItems();
   };
 
-  const useGetProductsTotalItems = () => {
-    store.useProductsItemsNumber({
+  const useGetUsersTotalItems = () => {
+    store.useUsersItemsNumber({
       $filters: bodyFilter.value,
       onError: () => {
         /* */
@@ -53,7 +53,7 @@ export const useUsers = () => {
     });
   };
 
-  const useGetProductsListItems = () => {
+  const useGetUsersListItems = () => {
     store.useUsersList({
       $filters: bodyFilter.value,
       onError: () => {
@@ -65,8 +65,8 @@ export const useUsers = () => {
     });
   };
 
-  const useGetProducts = (id: any) => {
-    productsPlayload.value.id = id;
+  const useGetUsers = (id: any) => {
+    usersPlayload.value.id = id;
     store.useUsersList({
       $id: id,
       onError: () => {
@@ -78,13 +78,13 @@ export const useUsers = () => {
     });
   };
 
-  const useAddProducts = () => {
-    productsForm.value.validate().then((valid: boolean) => {
+  const useAddUsers = () => {
+    usersForm.value.validate().then((valid: boolean) => {
       if (valid) {
-        store.useAddProducts({
-          $data: productsPlayload.value,
+        store.useAddUsers({
+          $data: usersPlayload.value,
           onError: (e: any) => useOnError(e.code == '5003' ? useNuxtApp().$i18n.t('PRODUCTS.EXIST') : ''),
-          onSuccess: () => useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'), { path: '/' + locale + '/' + 'products' }),
+          onSuccess: () => useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'), { path: '/' + locale + '/' + 'users' }),
         });
       } else {
         return false;
@@ -92,16 +92,16 @@ export const useUsers = () => {
     });
   };
 
-  const useUpdateProducts = () => {
+  const useUpdateUsers = () => {
     
-    productsForm.value.validate().then((valid: boolean) => {
+    usersForm.value.validate().then((valid: boolean) => {
       if (valid) {
-        console.log(productsPlayload.value)
-        store.useUpdateProducts({
+        console.log(usersPlayload.value)
+        store.useUpdateUsers({
         
-          $data: productsPlayload.value,
+          $data: usersPlayload.value,
           onError: (e: any) => useOnError(e.code == '5003' ? useNuxtApp().$i18n.t('PRODUCTS.EXIST') : ''),
-          onSuccess: () => useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'), { path: '/' + locale + '/' + 'products' }),
+          onSuccess: () => useOnSuccess(useNuxtApp().$i18n.t('SUCCESS'), { path: '/' + locale + '/' + 'users' }),
         });
       } else {
         return false;
@@ -109,25 +109,25 @@ export const useUsers = () => {
     });
   };
 
-  const useGetExtraFieldsProducts = () => {
-    store.useGetExtraFieldsProducts();
+  const useGetExtraFieldsUsers = () => {
+    store.useGetExtraFieldsUsers();
   };
 
   return {
-    productsForm,
+    usersForm,
     bodyFilter,
-    productsPlayload,
-    loadingProducts,
+    usersPlayload,
+    loadingUsers,
     rules,
-    useRemoveProducts,
-    useGetProductsList,
-    useAddProducts,
-    useUpdateProducts,
-    useGetProducts,
+    useRemoveUsers,
+    useGetUsersList,
+    useAddUsers,
+    useUpdateUsers,
+    useGetUsers,
     useFormDataChange,
     useClearValidate,
-    useGetProductsListItems,
-    useGetProductsTotalItems,
-    useGetExtraFieldsProducts,
+    useGetUsersListItems,
+    useGetUsersTotalItems,
+    useGetExtraFieldsUsers,
   };
 };
