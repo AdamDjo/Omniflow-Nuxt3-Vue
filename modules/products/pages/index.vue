@@ -42,6 +42,7 @@
         :has-edit-prem="true"
         :has-delete-prem="true"
         edit-path="products-id"
+        customId="_id"
         :loading="loadingProducts"
         :search-placeholder="$t('PRODUCTS.SEARCHPRODUCTS')"
         :msg-no-data="$t('NODATA')"

@@ -6,6 +6,7 @@
     "WS_USERS_LIST": "/users",
     "WS_USERS_COUNT": "/users",
     "WS_USERS_DELETE": "/users",
+    "WS_USERS_LOGOUT":"/users/logout",
     "WS_EXTRA_FIELDS_LIST": "http://localhost:3000/mock/extrafields.json"
   },
   "envDevs": {

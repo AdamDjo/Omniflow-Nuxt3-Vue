@@ -33,7 +33,7 @@ export default defineEventHandler(async (e) => {
         if (isPasswordValid) {
           const token: string = await jwt.sign({ _id:userData._id }, 'mysecrettoken');
           setCookie(e,'jwt',token,{
-            httpOnly: true,
+            httpOnly: false,
             maxAge:24*60*60*1000 //1day
           }),
           console.log(token)

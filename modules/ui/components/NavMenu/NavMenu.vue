@@ -11,15 +11,17 @@
       :class="{ 'ant-menu-item-selected-custom': useActiveMenu(nav) }"
       @click="
         () => {
-        
-          if(localePath(nav.path.name)=='logout'){
-            navigateTo(localePath('/login'));
-          
+    
+          if(nav.path.name!='logout'){
+            navigateTo(localePath(nav.path));
+
+
      
         }
         else {
-       
-          navigateTo(localePath(nav.path));
+          logout() 
+          navigateTo(localePath('/login'));
+
         }
         }
       "
@@ -43,9 +45,13 @@
         >
       </div>
     </a-menu-item>
+    
   </a-menu>
 </template>
 <script lang="ts" setup>
+import { useAuthStore } from '../../../login/stores/useAuthStore';
+const authStore = useAuthStore();
+
 defineProps({
   collapsed: {
     type: Boolean,
@@ -80,6 +86,28 @@ const useActiveMenu = (item: any) => {
   }
   return result;
 };
+
+const logout = (values: any) => {
+      authStore.logout()
+      console.log('logoutttttttttttttttt Success:', values);
+    };
+
+/*
+const logout = async (onError, onSuccess) => {
+  try {
+    const response = await fetch(`${useNuxtApp().$config.API}${useNuxtApp().$config.WS_USERS_LIST}`, {
+      method: 'POST',
+      // Add headers or body data here as needed
+    });
+    const data = await response.json();
+    // Perform any actions with response data here
+    onSuccess(data);
+  } catch (error) {
+    onError(error);
+  }
+}
+*/
+
 </script>
 <style lang="less">
 @import 'ant-design-vue/lib/menu/style/index.less';

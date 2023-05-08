@@ -1,10 +1,5 @@
 [
-  {
-    "fieldName": "id",
-    "fieldType": "TEXT",
-    "label": "$i18n.PASSWORD.id",
-    "rule": [{ "required": true, "message": "$i18n.REQUIRED" }]
-  },
+
   {
     "fieldName": "email",
     "fieldType": "TEXT",
