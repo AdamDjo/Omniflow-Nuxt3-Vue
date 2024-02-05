@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     '@BASE': resolve(__dirname),
   },
   runtimeConfig: {
-   
     public: {
       MongodbUri: process.env.MongodbUri,
       DEBUG: process.env.DEBUG,
@@ -93,35 +92,33 @@ export default defineNuxtConfig({
     `../${baseFolder}/modules/language`,
     `../${baseFolder}/modules/products`,
     `../${baseFolder}/modules/users`,
-    
+
     // npm module
     '@pinia/nuxt',
-   // '@sidebase/nuxt-auth',
-   //'@nuxtjs/axios',
-  // '@nuxtjs/auth-next',
-    '@nuxtjs/i18n', // keep last
-   
+    // '@sidebase/nuxt-auth',
+    //'@nuxtjs/axios',
+    // '@nuxtjs/auth-next',
+    // '@nuxtjs/i18n', // keep last
+
     // server side
-  
-   
   ],
   auth: {
     localStorage: false,
     cookie: {
       options: {
-        expires: 7
-      }
+        expires: 7,
+      },
     },
     strategies: {
       local: {
         endpoints: {
           login: { url: '/api/users/add', method: 'post', propertyName: false },
           logout: false,
-          user: { url: '/api/users', method: 'get', propertyName: false }
-        }
-      }
-    }
+          user: { url: '/api/users', method: 'get', propertyName: false },
+        },
+      },
     },
+  },
   i18n: {
     locales: ['en', 'fr'],
     dynamicRouteParams: true,
@@ -140,8 +137,7 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
   },
-  nitro:{
-    plugins:['~/server/db/index.ts'],
+  nitro: {
+    plugins: ['~/server/db/index.ts'],
   },
-  
 });

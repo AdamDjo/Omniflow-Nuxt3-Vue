@@ -13,7 +13,7 @@
   >
     <div class="modal-wrapper">
       <img
-        src="@UI/assets/img/confirm.svg"
+        src="@UI/assets/img/arrow-right.svg"
         alt=""
         class="icon"
       >

@@ -408,7 +408,7 @@
                       <span> {{ fieldItem.info }} </span>
                     </template>
                     <img
-                      src="@UI/assets/img/info.svg"
+                      src="@UI/assets/img/Ico_edit.svg"
                       class="info-icon"
                       alt=""
                     >
